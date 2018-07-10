@@ -9,8 +9,8 @@
 
     'depends': ['sale_management'],
     'data': [
-        'view/view.xml'
-        ],
+#'view/view.xml'
+],
 
     'installable': True,
     'auto_install': False,
