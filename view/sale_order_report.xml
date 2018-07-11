@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="inherit_report_saleorder_document"
+		inherit_id="sale.report_saleorder_document">
+		
+		<xpath expr="//p[@t-field='doc.note']" position="replace">
+		<t t-if="doc.note">
+		<b style="font-size:16px;">Note</b>
+		<p t-field="doc.note"/>
+		</t>
+		<br/>
+		<t t-if="doc.exercice">
+		<b style="font-size:16px;">Exercice</b>
+		<br/>            
+		<p t-field="doc.exercice"/>
+		</t>
+		<t t-if="doc.image">
+		<b style="font-size:16px;">Image</b>
+		<span t-field="doc.image" t-field-options='{"widget": "image"}' style="height: 15px;width:15px;"/>
+		</t>
+		</xpath>
+	</template>
+</odoo>

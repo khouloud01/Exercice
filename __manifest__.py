@@ -4,12 +4,13 @@
     'version': '0.1',
     'author': 'Khouloud Jlassi',
     'category': '',
-    'description' : """
+    'description' : """ version 11
     """,
 
     'depends': ['sale_management'],
     'data': [
-        'view/view.xml'
+        'view/sale_order_view.xml',
+        'view/sale_order_report.xml'
         ],
 
     'installable': True,

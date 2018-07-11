@@ -8,10 +8,12 @@
 			<field name="model">sale.order</field>
 			<field name="inherit_id" ref="sale.view_order_form" />
 			<field name="arch" type="xml">
-				<xpath expr="//field[@name='note']" position="after">	    
-				    <label for="exercice"/>
-				    <field name="exercice"/>
-				    <field name="image" widget="image" nolabel="1"/>
+				<xpath expr="//page[1]/field[@name='note']" position="after">
+					<label for="exercice" style="width:45%%;align:left" />
+					<field name="exercice" nolabel="1"
+						style="width:45%%;align:left" />
+					<field name="image" widget="image" nolabel="1"
+						style="width:45%%;align:left" />
 				</xpath>
 			</field>
 		</record>
