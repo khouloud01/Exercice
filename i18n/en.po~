@@ -1,0 +1,11 @@
+#. module: exercice
+msgid "Exercice"
+msgstr "Exercise"
+
+#. module: exercice
+msgid "Image"
+msgstr "Image"
+#. module: exercice
+#: model:ir.ui.view,arch_db:Exercice.inherit_report_saleorder_document
+msgid "Exercice"
+msgstr "Exercise"
