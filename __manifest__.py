@@ -11,7 +11,7 @@
     'data': [
         'view/sale_order_view.xml',
         'view/sale_order_report.xml',
-#         'view/sale_order_portal.xml'
+        'view/sale_order_portal.xml'
         ],
 
     'installable': True,

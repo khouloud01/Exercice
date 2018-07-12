@@ -1,0 +1,21 @@
+<odoo>
+	<template id="portal_order_page_inherit" inherit_id="sale.portal_order_page" name="Sales Order inherit">
+		  <xpath expr="//div[@class='panel-body'][1]/div[@class='row'][3]" position="after">
+		  <br/>
+                <div class="col-md-6">
+                <t t-if="order.exercice">
+                  <div>
+                    <strong>Exercice</strong>
+                  </div>
+                  <div t-field="order.exercice"/>
+                  </t>
+                   <t t-if="order.image">
+                   <strong>Image</strong>
+                  <div t-field="order.image"  t-options="{'widget': 'image', 'class': 'img-rounded', 'style':'width: 48px;height:48px'}" />
+                  </t>
+            <br/>
+            </div>
+            </xpath>
+	</template>
+</odoo>
+
